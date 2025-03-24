@@ -1,0 +1,90 @@
+#mainnav .nav-link{
+    font-size:21px;
+    color:rgb(230, 223, 223);
+}
+#mainnav .nav-link:hover{
+    color:cyan;
+}
+nav{
+    padding-left:3px
+}
+#firstcontainer,#secondcontainer,#thirdcontainer,#fourthcontainer{
+    background-color:rgb(243, 228, 94);
+}
+#secondcontainer{
+    padding-top: 32px;
+}
+#thirdcontainer{
+    padding-top:45px;
+}
+#fourthcontainer{
+    padding-top:47px;
+    padding-bottom:47px;
+}
+.dogimg{
+    transition:0.5s ease-in-out;
+}
+.dogimg:hover{
+    box-shadow:2px 2px 5px 3px rgb(240, 16, 16);
+    transform:translateY(-2px);
+}
+
+
+#disspan{
+    color:white;
+    font-weight:500;
+    font-size:29px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#namespan{
+    color:white;
+    font-weight:500;
+    font-size:31px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#welcome
+{
+    font-size:62px;font-family:'Times New Roman', Times, serif;color:red;
+}
+#wel
+{
+    font-size:20px;text-align:center;color:rgb(30, 104, 241);
+}
+#heading
+{
+    color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:57px;
+}
+#bruce
+{
+    color:rgb(255, 20, 157);font-size: 18px; padding:8px 0px;
+}
+#dogmatters
+{
+    font-size:52px;font-family:'Times New Roman', Times, serif;color:rgb(250, 10, 10);letter-spacing:2px;
+}
+@media(max-width:800px)
+{
+  #welcome
+  {
+      font-size: 46px;
+      padding-left: 9px;
+  }
+  #dogmatters
+  {
+      padding-left: 35px;
+      font-size: 48px;
+  }
+  #bruce
+  {
+      font-size: 17px;
+  }
+  #heading
+  {
+      padding-top: 15px;
+  }
+  #wel
+  {
+      font-size: 16px;
+  }
+}

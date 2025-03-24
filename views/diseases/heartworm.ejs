@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heartworm</title>
+   <style>
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+        nav{
+             padding-left:3px ;
+                }
+         .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        .dark{
+            font-size : 20px;
+            font-weight: 500;
+            color:red;
+        }
+        .light{
+            color:rgb(0, 81, 255);
+            font-size:16px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+   </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/nutrients">NUTRIENTS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding-left:8px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">HEARTWORM</h1>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( About the disease )</h1>
+               <p style="color:rgb(253, 55, 154);font-size:17px;">
+                Heartworm disease in dogs is a blood-borne parasitic nematode (roundworm) known as Dirofilaria immitis transmitted by mosquitoes.
+                Upwards of 30 species of mosquitoes can act as heartworm transmitters. Mosquitoes ingest immature heartworm larvae, called microfilariae, by feeding on either an infected cat or dog. The microfilariae develop further for 10 to 30 days in the mosquito's gut and then enter parts of the mosquito's mouth.
+                When an infected mosquito bites a dog, it injects larvae into the dog. The larvae then mature over a period of several months, eventually ending up in the right side of the heart and the pulmonary arteries. Once this occurs, they mature into adult heartworms in dogs, and can reproduce about six months from the time of invasion. At approximately eight months after the invasion, heartworm in dogs begin to produce a new crop of microfilariae that will live in the dog's blood for about one month. By the time this occurs, their lives are in danger even though clinical signs may not be apparent yet.
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://www.ovrs.com/blog/wp-content/uploads/2018/04/OVRS-Apr-Wk2-shutterstock_711099700-2000x1333.jpg">
+          </div>
+        </div>
+       </section>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://www.coronadopethospital.com/wp-content/uploads/2018/10/Annual-Dog-Vaccinations-Rio-Rancho.jpeg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center">
+               <br>
+               <br>
+               
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( Symptoms )</h1>
+               <p style="font-size:17px;color:rgb(253, 55, 154)">
+                Heartworm symptoms in dogs are divided into four stages. It is important to understand that individual stages are not always clearly identifiable and some stages can overlap, but the following information will help educate you about the four major stages, as well as their accompanying heartworm symptoms. The four clinical stages of heartworm begin when your dog has already become infected and the heartworms are present in the dog's heart:
+                <br>
+                <ul>
+                    <li><span class="dark">Stage 1</span> <span class="light"> In dogs, the first stage of heartworm will typically be symptom free. In this stage, the heartworms are present and settling into the heart. However, in stage one the disease has not yet progressed to the point where the heartworms will have produced a new generation of microfilariae and dog's body will not yet have produced antigens in an amount sufficient for detection.
+                    </span>
+                        </li>
+                    <li><span class="dark">Stage 2</span> <span class="light"> Stage two of heartworms in dogs is accompanied by anywhere from no symptoms to moderate symptoms including intolerance for exercise and a more lingering cough. The heartworms have been present long enough in the body for antibody production and probable microfilariae production. During this phase, heartworm disease may be detected with blood tests.
+                    </span>
+                        </li>
+                    <li><span class="dark">Stage 3</span> <span class="light"> By stage three of heartworms in dogs, the symptoms of the disease will be very noticeable and have a big impact on your dog's health. Dogs will cough and experience fatigue after exercise, may be reluctant to exercise at all, and can have trouble breathing. During this stage, dogs may also cough up blood. By stage three, the disease is quite evident on x-rays. The worms in the heart and large vessels will be obvious on x rays.
+                   </span>
+                        </li>
+                    <li><span class="dark">Stage 4</span> <span class="light"> Dogs in stage four of heartworm disease have very visible heartworm disease symptoms. These symptoms are accompanied by long-term implications for the dog's health. These dogs are very ill. The symptoms are similar to Stage 3 but more severe. Dogs will be reluctant to exercise, tired after exercising, and will exhibit a cough. They will probably experience trouble breathing as well. Testing may reveal the impact of the disease in the form of abnormal sounds within the dog's heart and lungs and an enlarged liver. Even with treatment, this stage of the disease carries a high risk of long term debilitation and possible death.
+                        </span>
+                        </li>
+                </ul>
+               </p>
+          </div>
+          </div>
+        </div>
+       </section>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding-left:8px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( Treatment )</h1>
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                The first thing to understand is that there is a significant difference between heartworm prevention and heartworm treatment. Prevention is simple to do and is effective in protecting your dog from heartworm disease. Treatment options are used for dogs that are already sick because they have become infected.
+                The first step in heartworm treatments is obtaining a diagnosis. Most veterinarians use a battery of tests to determine the presence of heartworms in dogs. The first step in diagnosis of heartworm in dogs is to perform a blood test.              
+                A positive heartworm blood test in the first step in diagnosis. If the blood test comes back positive, then the following tests may also be performed to determine the stage and severity of the disease in order to determine the most appropriate treatment plan:
+               </p>
+               </div>
+               <br>
+                <ul>
+                   <li><span class="light">A urinalysis, or the testing of a dog's urine</span></li>
+                   <li><span class="light">An antigen test determines the presence of adult female heartworms</span></li>
+                   <li><span class="light">Radiographs, or X-Rays to view the size and shape of a dog's heart. This is helpful because many dogs with heartworm develop enlarged pulmonary arteries, or have obstructions in the arteries leading to the lungs</span></li>
+                   <li><span class="light">An ultrasound allows us to directly view the internal structures of the heart and surrounding vessels, in order to assess the condition and function of the heart</span></li>
+               </ul>
+                
+          
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://journal.lyka.com.au/wp-content/uploads/2018/02/Holistic-Vet.png">
+          </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

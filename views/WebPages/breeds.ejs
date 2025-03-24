@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeds</title>
+    <link rel="stylesheet" href="/breeds.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        h1{
+            text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+        }
+        #mainnav .nav-link{
+           font-size:21px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+        nav{
+             padding-left:3px ;
+                }
+        #ger,#mast{
+            padding-top:7px;
+        }      
+        .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        p{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 30px;">
+                &#128062;
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/home">HOME</a>
+              <a class="nav-link" href="/nutrients">NUTRIENTS</a>
+              <a class="nav-link" href="/LogIn">ADOPTION</a>
+              <% if(m==0) { %> 
+              <a class="nav-link" href="/update">UPDATE</a>
+              <% } %> 
+            </div>
+            <% if(m==0) {%>
+              <div class="navbar-nav" style="margin-left: auto;">
+                <a class="nav-link" href="/LogOut">Log Out</a>
+              </div>
+              <% } %> 
+              <% if(m==1){ %>
+                <div class="navbar-nav">
+                  <a class="nav-link"  href="/register">REGISTER</a>
+                </div>
+                <% } %> 
+          </div>
+        </div>
+      </nav>
+
+
+    <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+     <div class="row">
+       <div class="col-lg-6">
+        <div class="text-center">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ROTTWEILER</h1>
+            <img src="https://i.pinimg.com/474x/c3/1d/12/c31d1235889fa331e8d0a9efbc845441.jpg" width="83" height="80">
+            <p style="color:rgb(253, 40, 147);font-size:16px; padding: 0px 5px;">
+                The Rottweiler was originally dogs bred to drive cattle to market. 
+                They are popular family guardians and friends. Novice pet parents should beware, as these dogs are strong and intense. They need experienced care and training. A well-bred Rottweiler is calm and confident. He's typically aloof toward strangers, but never timid or fearful. Rottweilers exhibit a "wait-and-see" attitude when confronted with new people and situations. When these characteristics come together as they should, the Rottweiler is a natural guard dog with a mellow disposition who is successful not only in police, military, and customs work, but also as a family friend and protector.
+                Rotties can be ferocious in their defense. It's essential to channel their power and protectiveness by providing early socialization, firm, fair, consistent training and leadership, and a regular job to perform. When this doesn't happen, Rottweilers can become dangerous bullies .
+                You must be able to provide your Rottweiler with leadership he can trust and respect without resorting to anger or physical force. Otherwise, he'll take the role of top dog for himself.
+                Rottweilers are not temperamentally unsound or inherently vicious. Well-bred, well-socialized Rotties are playful, gentle, and loving to their families. They are easy to train if treated with respect and make great companions.
+            </p>  
+            <section style="color:darkred ;font-size: 15px;" class="container-fluid px-0">
+                
+                <div class="row">
+                 <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 2/5</div>
+                 <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 4/5</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 4/5</div>
+                    <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 4/5</div>
+                   </div>
+                   <div class="row">
+                    <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 4/5</div>
+                    <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 5/5</div>
+                   </div>
+            </section>
+            <br>
+            
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                 <form action="/add/reviews/rottweiler" method="GET">
+                     <button class="btn btn-primary">ADD A REVIEW</button>
+                      </form>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                 <form action="/view/reviews/100" method="GET">
+                     <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                      </form>
+                </div>
+                <div class="col-lg-1"></div>
+                </div>
+       </div>
+       </div>
+       <div class="col-lg-6">
+         
+         <br>  
+         <br>
+        <img class="img-fluid dogimg" src="https://i.pinimg.com/originals/a7/50/63/a750634c465d0abdbea48544137fd8ac.jpg">
+       </div>
+     </div>
+    </section>
+    <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://i.redd.it/o5fybjehdth51.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center">
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">GERMAN SHEPHERD</h1>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNz0YogmC0gKht-VtxU_T_S3ZszQvMH4Kj9-8OXnW7I4p-EWRL0A5c5-I41-W9cwWBpK8&usqp=CAU" width="73" height="75">
+               <p style="color:rgb(253, 55, 154);font-size:16px;padding:0px 10px">
+                The German Shepherd Dog is one of America’s most popular dog breeds. They’re intelligent and capable working dogs. Their devotion and courage are unmatched. And they’re amazingly versatile.
+                The breed also has an aloof and sometimes suspicious nature—great for a watchdog, but not the sort of family dog who'll make guests feel welcome. However, if you expose a German Shepherd to many different situations and people starting in puppyhood, they can learn to take new people and circumstances in stride.
+                The German Shepherd may embody some of the best traits of dogs, but they're not for everyone. Originally bred to herd flocks all day, this is a high-energy dog who needs a lot of activity and exercise. Without it, they're likely to express their boredom and frustration in ways you don't like, such as barking and chewing.   
+                They've got a reputation for being a great watchdog and they are but they should never be chained or tethered just to stand guard.
+            </p>
+               <section style="color:darkred;font-size: 15px;" class="container-fluid px-0">
+                   <div class="row">
+                    <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                    <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 4/5</div>
+                   </div>
+                   <div class="row">
+                       <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 4/5</div>
+                       <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 5/5</div>
+                      </div>
+                      <div class="row">
+                       <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 5/5</div>
+                       <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 3/5</div>
+                      </div>
+               </section>
+               <br>
+               
+               <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                 <form action="/add/reviews/german shephard" method="GET">
+                     <button class="btn btn-primary">ADD A REVIEW</button>
+                      </form>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                 <form action="/view/reviews/101" method="GET">
+                     <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                      </form>
+                </div>
+                <div class="col-lg-1"></div>
+                </div>
+          </div>
+          </div>
+        </div>
+        </section>
+        <section id="mast" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+            <div class="row">
+              <div class="col-lg-6">
+               <div class="text-center">
+                   <br>
+                   <br>
+                   <br>
+                   <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">MASTIFF</h1>
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4211ba8RlyiK1hC2kWLuTfwPHikthatV9WeF9tfyH1nuBECAKLbMnbLSpEGLSThKzqy4&usqp=CAU" width="84" height="83">
+                   <p style="color:rgb(253, 55, 154);font-size:17px;padding: 0px 6px;">
+                    The Mastiff is one of the most ancient types of dog breeds. Their ancestor, the Molossus, was known 5,000 years ago. Back then, they were ferocious war dogs, very different from the benevolent behemoth that the breed is today.
+                    Mastiffs are sometimes called Old English Mastiffs. Although this is a purebred dog, you may find them in shelters and rescues. Although the Mastiff's size makes them appear fierce, their temperament is one of good-natured docility. But let danger threaten their family and this dog will step up to protect them.
+                    Given adequate exercise, they can make himself at home in any environment, from a city condo to a country estate. If you're thinking that the Mastiff is an outdoor dog, think again. They prefer the comforts of home and the presence of their family and will do their best to be a lap dog--or at least a cushy footstool. Left to their own devices, they'll pine away or become destructive, with neither being a desirable result.
+                    Mastiff has some less attractive qualities. When they shake that massive head, drool flies everywhere. You'll find, however, that if you let it dry, it's easily wiped away. And you get used to keeping baby wipes or hand towels nearby.
+                    To put it politely, they can be flatulent. Often, however, this can be solved by finding a diet that produces a less odorous outcome.   
+                </p>
+                   
+                   <section style="color:darkred" class="container-fluid px-0">
+                       <div class="row">
+                        <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 2/5</div>
+                        <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 4/5</div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 4/5</div>
+                           <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 2/5</div>
+                          </div>
+                          <div class="row">
+                           <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 4/5</div>
+                           <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 4/5</div>
+                          </div>
+                   </section>
+                   <br>
+                   <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                     <form action="/add/reviews/mastiff" method="GET">
+                         <button class="btn btn-primary">ADD A REVIEW</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                     <form action="/view/reviews/102" method="GET">
+                         <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    </div>
+              </div>
+              </div>
+              <div class="col-lg-6">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://sites.google.com/site/dogrnrc/_/rsrc/1472845930996/dogs/neapolitan-mastiff/Neapolitan-Mastiff-2.jpg">
+            </div> 
+            </div>
+            </section>
+                <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/1-group-of-labrador-retrievers-on-a-hill-zandria-muench-beraldo.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">LABRADOR RETRIEVER</h1>
+               <img src="https://thumbs.dreamstime.com/b/labrador-dog-vector-eps-hand-drawn-vector-eps-logo-icon-crafteroks-silhouette-illustration-different-uses-labrador-dog-vector-146466988.jpg" width="88" height="86">
+               <p style="color:rgb(253, 55, 154);font-size:17px; padding:0px 8px">
+                The Labrador Retriever was bred to be both a friendly companion and a useful working dog breed.
+                Today’s Lab is as good-natured and hardworking as their ancestors. Modern Labs work as retrievers for hunters, assistance dogs, show competitors, and search and rescue dogs, among other canine jobs.
+                Built for sport, the Lab is muscular and athletic. They have a short, easy-care coat, friendly demeanor, keen intelligence, and plenty of energy. Devotion to this breed runs deep; Labs are loving, people-oriented dogs who live to serve their families, and owners and fans sometimes liken their Labs to angels.
+                The Lab's sweet nature makes them an excellent therapy dog, visiting homes for the elderly and hospitals, and their intelligence makes them an ideal assistance dog for those with disabilities. They also excel as a search and rescue dog or as a retriever for hunters, thanks to their athletic build, strong nose, and courageous nature. And Labs have also become the breed to beat at dog sports such as agility and obedience competitions, especially obedience.
+            </p>
+               
+               <section style="color:darkred" class="container-fluid px-0">
+                   <div class="row">
+                    <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                    <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 5/5</div>
+                   </div>
+                   <div class="row">
+                       <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 4/5</div>
+                       <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 5/5</div>
+                      </div>
+                      <div class="row">
+                       <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 4/5</div>
+                       <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 3/5</div>
+                      </div>
+               </section>
+               <br>
+               
+               <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                 <form action="/add/reviews/labrador retriever" method="GET">
+                     <button class="btn btn-primary">ADD A REVIEW</button>
+                      </form>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                 <form action="/view/reviews/103" method="GET">
+                     <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                      </form>
+                </div>
+                <div class="col-lg-1"></div>
+                </div> 
+          </div>
+          </div>
+        </div>
+        </section>
+        <section id="mast" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+            <div class="row">
+              <div class="col-lg-6">
+               <div class="text-center">
+                   <br>
+                   <br>
+                   <br>
+                   <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">BEAGLE</h1>
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQ6vOQPfY1RDktJmdlYSURe0aE_qtn-1OG2NWapJGmw0ceHoU8aRWDOzyxg46I_PNVKM&usqp=CAU" width="86" height="87">
+                   <p style="color:rgb(253, 55, 154);font-size:18px;padding: 0px 6px;">
+                    Small, compact, and hardy, Beagles are active companions for kids and adults alike. Canines of this dog breed are merry and fun loving, but being hounds, they can also be stubborn and require patient, creative training techniques.
+                    The most important thing to know about the Beagle is that he is a scenthound. His nose is the most important part of his anatomy and his head is always down to the ground, searching for an interesting trail to follow. Beagles have approximately 220 million scent receptors compared to the paltry 5 million or so in people, which makes them very good at picking up scents.
+                    Their noses guide them through life, and they’re never happier than when following an interesting scent. Beagles originally were bred as scenthounds to track small game, mostly rabbits and hare. They’re still used for this purpose in many countries today, including the United States. But you’ll find plenty of these pups living as companion dogs and loving, furry family members.
+                   </p>
+                   <br>
+                   <section style="color:darkred" class="container-fluid px-0">
+                       <div class="row">
+                        <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                        <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 5/5</div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 3/5</div>
+                           <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 4/5</div>
+                          </div>
+                          <div class="row">
+                           <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 5/5</div>
+                           <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 3/5</div>
+                          </div>
+                   </section>
+                   <br>
+                   <br>
+                   <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                     <form action="/add/reviews/beagle" method="GET">
+                         <button class="btn btn-primary">ADD A REVIEW</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                     <form action="/view/reviews/104" method="GET">
+                         <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    </div>
+              </div>
+              </div>
+              <div class="col-lg-6">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://emborapets.com/wp-content/uploads/2019/03/40866743_m-1024x1024.jpg">
+            </div>
+            </div>
+            </section>
+            <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-md-1">
+                        <br>
+                        <br>
+                     <img class="img-fluid dogimg" src="https://2.bp.blogspot.com/-d1TbB3tHa6E/WtHEUewEcrI/AAAAAAAAAJQ/-cbSyl2MpEk37t1Ma33G9YHvlYf0-oOYwCEwYBhgL/s1600/f0bf0d6a626ddd94c61f5a987f8522e1.jpg">
+                    </div>
+                  <div class="col-lg-6 order-1 order-md-2">
+                   <div class="text-center">
+                       <br>
+                       <br>
+                       <br>
+                       <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">PUG</h1>
+                       <img src="https://previews.123rf.com/images/treemouse/treemouse1810/treemouse181000016/110553055-pug-dog-black-and-white-hand-drawn-cartoon-portrait-funny-happy-smiling-pug-sitting-and-looking-forw.jpg" width="88" height="88">
+                       <p style="color:rgb(253, 55, 154);font-size:18px;padding:0px 6px">
+                        The Pug is often described as a lot of dog in a small space. These sturdy, compact dogs are a part of the American Kennel Club’s Toy group, they have a great sense of humor and like to show off.
+                        Originally bred to be lap dogs, Pugs thrive on human companionship. They’re highly sensitive, and though they can make for great apartment pets, they will not appreciate being left home alone for long hours of the day. Although these pups have a stubborn side, especially when it comes to house training, they’re playful, affectionate dogs who will get along well even with novice pet parents.       
+                        While Pugs can be good watchdogs, they aren't inclined to be "yappy," something your neighbors will appreciate. If trained and well-socialized, they get along well with other animals and children. Because they are a small, quiet breed and are relatively inactive when indoors, they are a good choice for apartment dwellers. Due to the flat shape of the Pug's face, he does not do well in extremely hot or cold weather, and should be kept indoors.
+                    </p>
+                       <br>
+                       <section style="color:darkred" class="container-fluid px-0">
+                           <div class="row">
+                            <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                            <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 4/5</div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 3/5</div>
+                               <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 2/5</div>
+                              </div>
+                              <div class="row">
+                               <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 4/5</div>
+                               <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 2/5</div>
+                              </div>
+                       </section>
+                       <br>
+                       <br>
+                       <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                         <form action="/add/reviews/pug" method="GET">
+                             <button class="btn btn-primary">ADD A REVIEW</button>
+                              </form>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                         <form action="/view/reviews/105" method="GET">
+                             <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                              </form>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        </div>
+                  </div>
+                  </div>
+                </div>
+                </section>
+                       <section id="mast" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+            <div class="row">
+              <div class="col-lg-6">
+               <div class="text-center">
+                   <br>
+                   <br>
+                   
+                   <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DOBERMAN PINSCHER</h1>
+                   <img src="https://t4.ftcdn.net/jpg/03/61/47/47/360_F_361474774_NgNXoIh6tKl1ieaBXt0eIC9D3toHvLq9.jpg" width="90" height="87">
+                   <p style="color:rgb(253, 55, 154);font-size:16px;">
+                    Doberman Pinschers originated in Germany during the late 19th century, mostly bred as guard dogs. Their exact ancestry is unknown, but they’re believed to be a mixture of many dog breeds, including the Rottweiler, Black and Tan Terrier, and German Pinscher.
+                    With their sleek coat, athletic build, and regal appearance, this pup looks like an aristocrat. They’re highly energetic and smart dogs who perform well in police and military work, canine sports, and as family guardians and companions.
+                    The Dobie's fierce reputation precedes them. They're feared by those who don't know them, stereotyped as highly aggressive and vicious. True, they're a formidable guardian, but they're usually a gentle, watchful, and loving dog. They don't go looking for trouble, but they're fearless and will defend their family and turf if they perceive danger.   
+                </p>
+                   
+                   <section style="color:darkred" class="container-fluid px-0">
+                       <div class="row">
+                        <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                        <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 5/5</div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 3/5</div>
+                           <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 4/5</div>
+                          </div>
+                          <div class="row">
+                           <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 5/5</div>
+                           <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 5/5</div>
+                          </div>
+                   </section>
+                   <br>
+                   <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                     <form action="/add/reviews/doberman pinscher" method="GET">
+                         <button class="btn btn-primary">ADD A REVIEW</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                     <form action="/view/reviews/106" method="GET">
+                         <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                          </form>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    </div>
+              </div>
+              </div>
+              <div class="col-lg-6">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://wallsdesk.com/wp-content/uploads/2017/01/Doberman-Pinscher-for-desktop.jpg">
+            </div>
+            </div>
+            </section>
+                        <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-md-1">
+                        <br>
+                        <br>
+                     <img class="img-fluid dogimg" src="https://i2.wp.com/thesprucepets.com/thmb/wRHc7PypQDjL8FCGzDW6h924CrM=/800x800/filters:no_upscale():max_bytes(150000):strip_icc()/40386520_272666870012786_5732696489881099002_n-5b98360ac9e77c0050fa8a73.jpg">
+                    </div>
+                  <div class="col-lg-6 orer-1 order-md-2">
+                   <div class="text-center">
+                       <br>
+                       <br>
+                       <br>
+                       <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">HUSKEY</h1>
+                       <img src="https://media.istockphoto.com/vectors/siberian-husky-vector-id537925683?k=6&m=537925683&s=612x612&w=0&h=ODyHCTCgFxSRRCJFyexYFu1Fm2Z4Sn-bBsZOTlEbOIw=" width="87" height="100">
+                       <p style="color:rgb(255, 42, 148);font-size:17px;padding:0px 7px">
+                        The Siberian Husky dog breed has a beautiful, thick coat that comes in a multitude of colors and markings. Their blue or multi-colored eyes and striking facial masks only add to the appeal of this breed, which originated in Siberia.
+                        It is easy to see why many are drawn to the Siberian’s wolf-like looks, but beware because this athletic, intelligent dog can act independently and challenge first-time dog parents.      
+                        This medium-size working dog possesses power and athleticism. First developed as sled dogs ,some are still used in this capacity ,Huskies are remarkable dogs and their ability to learn is staggering.
+                        However, they often use that remarkable mind to learn less savory things and are not overly eager to please their people. They are extremely difficult to train, so first-time dog owners or timid people should consider other breeds. Huskies fit best with confident, experienced dog owners who set rules and deliver consistency. They seem to have an uncanny ability to distinguish the difference between home and class — behaving beautifully in class while disregarding commands when at home.
+                    </p>
+                       <br>
+                       <section style="color:darkred" class="container-fluid px-0">
+                           <div class="row">
+                            <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                            <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 4/5</div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 3/5</div>
+                               <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 2/5</div>
+                              </div>
+                              <div class="row">
+                               <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 4/5</div>
+                               <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 4/5</div>
+                              </div>
+                       </section>
+                       <br>
+                       <br>
+                       <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-4">
+                         <form action="/add/reviews/huskey" method="GET">
+                             <button class="btn btn-primary">ADD A REVIEW</button>
+                              </form>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                         <form action="/view/reviews/107" method="GET">
+                             <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                              </form>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        </div>
+                  </div>
+                  </div>
+                </div>
+                </section>
+      <section id="mast" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+             <div class="row">
+                      <div class="col-lg-6">
+                       <div class="text-center">
+                           <br>
+                           <br>
+                           <br>
+                           
+                           <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">BULLDOG</h1>
+                           <img src="data:image/jpeg;base64,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" width="90" height="87">
+                           <p style="color:rgb(255, 41, 148);font-size:18px; padding:0px 9px">
+                            The Bulldog was originally used to drive cattle to market and to compete in a bloody sport called bullbaiting. Today, they’re gentle companions who love kids.
+                            A bulldog is a muscular, lower to the ground and has a droopy upper lip and his lower jaw is undershot, meaning that his lower teeth stick out farther than his top teeth. The Bulldog's jaws are massive and strong, intended for latching on to his opponent and holding on.  
+                            They are a medium-size dog with a thick-set, low-slung body. Their short-muzzled head is massive and square. They have broad shoulders and chests, with thick, sturdy limbs.
+                            The Bulldog's muscular body leads him to have a distinctive gait. Because his stocky legs are set at each corner of his body, he moves with more of a waddle than a walk. It resembles sort of a loose-jointed, shuffling, sideways roll. Because their shoulders are much wider than their rear ends and they have such large heads, it's difficult for the females to whelp puppies without assistance.                        
+                        </p>
+                           <br>
+                           
+                           
+                           <section style="color:darkred" class="container-fluid px-0">
+                               <div class="row">
+                                <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                                <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 4/5</div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 4/5</div>
+                                   <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 2/5</div>
+                                  </div>
+                                  <div class="row">
+                                   <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 3/5</div>
+                                   <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 5/5</div>
+                                  </div>
+                           </section>
+                           <br>
+                           <br>
+                           <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-4">
+                             <form action="/add/reviews/bulldog" method="GET">
+                                 <button class="btn btn-primary">ADD A REVIEW</button>
+                                  </form>
+                            </div>
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-4">
+                             <form action="/view/reviews/108" method="GET">
+                                 <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                                  </form>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            </div>
+                      </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <br>
+                        <br>
+                     <img class="img-fluid dogimg" src="https://i.pinimg.com/originals/43/df/20/43df207f6bb3652334a699cb975c90af.jpg">
+                    </div>
+                    </div>
+                    </section>  
+              <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+                 <div class="row">
+                  <div class="col-lg-6 order-2 order-md-1">
+                    <br>
+                         <br>
+                             <img class="img-fluid dogimg" src="http://koroyza.co.uk/wp-content/uploads/2019/11/Koroyza-Dalmatian-Koroyza-Candy-Man-5.jpg">
+                            </div>
+                          <div class="col-lg-6 order-1 order-md-2">
+                           <div class="text-center">
+                               <br>
+                               <br>
+                               
+                               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DALMATION</h1>
+                               
+                               <img src="https://as2.ftcdn.net/jpg/02/45/46/21/500_F_245462164_WCFSDgud2nrHsSQvGBL0PyXXxArNRRao.jpg" width="87" height="100">
+                               <p style="color:rgb(253, 55, 154);font-size:18px;padding:0px 10px">
+                                This sleek and athletic Dalmatian dog breed has a history that goes back several hundred years. They started out as a coach dog but also served in many other capacities, including hunter, firehouse dog, and circus performer.
+                                Not surprisingly, the Dalmatian today has an endless capacity for exercise and is the ideal companion for people who jog, skate, or bicycle. He's also a keen competitor in canine sports such as agility and flyball. A Dalmatian must have adequate daily exercise to prevent behavior problems from developing.
+                                If you are considering a Dalmatian, be aware that the breed is not only highly active but also highly intelligent. They need training early in life to establish rules for behavior, or they will decide it is their job to run things. Dalmatians can be a bit headstrong so training must be firm and consistent.
+                            </p>
+                               
+                               <section style="color:darkred" class="container-fluid px-0">
+                                   <div class="row">
+                                    <div class="col-lg-6"><span style="font-weight: 500;">ADAPTABILITY</span> : 3/5</div>
+                                    <div class="col-lg-6"><span style="font-weight: 500;">FRIENDLINESS</span> : 4/5</div>
+                                   </div>
+                                   <div class="row">
+                                       <div class="col-lg-6"><span style="font-weight: 500;">HEALTH AND GROOMING NEEDS</span> : 4/5</div>
+                                       <div class="col-lg-6"><span style="font-weight: 500;">TRAINABILITY</span> : 3/5</div>
+                                      </div>
+                                      <div class="row">
+                                       <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL NEEDS</span> : 5/5</div>
+                                       <div class="col-lg-6"><span style="font-weight: 500;">PHYSICAL STRENGTH</span> : 3/5</div>
+                                      </div>
+                               </section>
+                              <br>
+                              
+                              <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-4">
+                                 <form action="/add/reviews/dalmation" method="GET">
+                                     <button class="btn btn-primary">ADD A REVIEW </button>
+                                      </form>
+                                </div>
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-4">
+                                 <form action="/view/reviews/109" method="GET">
+                                     <button class="btn btn-success">VIEW ALL REVIEWS</button>
+                                      </form>
+                                </div>
+                                <div class="col-lg-1"></div>
+                                </div> 
+                          </div>
+                          </div>
+                        </div>
+                        </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

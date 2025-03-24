@@ -1,0 +1,30 @@
+#outer1::after{
+    content:"";
+    
+    background: url(https://coolwallpapers.me/picsup/5269631-dog-grass-tree-walk-canine-pet-animal-standing-hunting-field-outdoors-nature-bulgaria-weim-hanna-forest-weimaraner-gun-dog-deerhound-ranger-free-images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:blur(2px);
+    -webkit-filter: blur(2px);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    z-index: -1;
+} 
+#outer1{
+    display:flex;
+    justify-content:center;
+    margin-top:44px;
+}
+label{
+    color:aqua;
+    font-weight:450;
+    font-size:18px;
+}
+#forflex{
+    display:flex;
+    justify-content: space-around;
+}

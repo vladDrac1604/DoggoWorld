@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+        text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+       }
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+            .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>labrador nutritional guide</title>
+</head>
+<body>
+<nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-size: 30px;">
+      &#128062;
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/home">HOME</a>
+        <a class="nav-link" href="/breeds">BREEDS</a>
+        <a class="nav-link" href="/LogIn">ADOPTION</a>
+        <% if(m==0) { %> 
+        <a class="nav-link" href="/update">UPDATE</a>
+        <% } %> 
+      </div>
+      <% if(m==0) {%>
+        <div class="navbar-nav" style="margin-left: auto;">
+          <a class="nav-link" href="/LogOut">Log Out</a>
+        </div>
+        <% } %> 
+        <% if(m==1){ %>
+          <div class="navbar-nav">
+            <a class="nav-link"  href="/register">REGISTER</a>
+          </div>
+          <% } %> 
+    </div>
+  </div>
+</nav>
+
+
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding:0px 7px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DIET GUIDANCE</h1>
+               <img src="https://thumbs.dreamstime.com/b/labrador-dog-vector-eps-hand-drawn-vector-eps-logo-icon-crafteroks-silhouette-illustration-different-uses-labrador-dog-vector-146466988.jpg" width="88" height="86">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:16px;">
+               For a labrador puppy upto 3 months milk is the only food apart from purified water which your dog is gonna need till 1.5months. After this age, till 3 months you have two options. You can either continue with milk or look at starter food options like Royal Canin Maxi starter, Drools starter, Farmina Puppy Starter, Canine Creek Starter, Orijen puppy and plenty of other brands which are available in the market.
+               For a lab of 3 to 15 months a proper nutritious diet is essential to achieve good growth. You can either go for Royal Canin Maxi Junior or Royal Canin Labrador Junior or puppy variants of other brands like drools, canine creek, Orijen Puppy and Junior(Recommended), Acana large breed puppy, pedigree(not recommended) at this age. If you are giving a good diet like Royal Canin, farmina or even home-made food, growth should be good.
+               Puppies of age 3-6+ months should be given around 300g-450+g of dry food per day.From 15 months and onwards your puppy is an adult dog now. It’s highly unlikely your dog will grow further in length and height after this age. However, a good diet is recommended to ensure a good life span(above 12 years) and muscle development. For those who want Royal Canin, you can go for Royal Canin Labrador adult. You can also go for more premium brands than Royal canin like Farmina N&D, Hill’s, Orijen, Acana and more. Homemade food can be a healthy option as well. Remember, lab is a high energy dog, so regular exercises/walks are very essential.
+
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2019/03/19142606/AdobeStock_491912561-800x600.jpeg">
+          </div>
+        </div>
+       </section>
+       <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://www.ktlabradors.com/Gunner/gunner_stand.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center" style="padding:0px 7px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ALLERGIES</h1>
+               <img src="https://thumbs.dreamstime.com/b/labrador-dog-vector-eps-hand-drawn-vector-eps-logo-icon-crafteroks-silhouette-illustration-different-uses-labrador-dog-vector-146466988.jpg" width="88" height="86">
+               <p style="color:rgb(253, 55, 154);font-size:17px;">
+                Like other retriever breeds, the Labrador Retriever is genetically more susceptible to skin allergies than some other dog breeds. Atopic dermatitis is one of the more common hereditary conditions that your Lab might suffer from.
+                One of the most common causes of atopic dermatitis in Labradors is environmental or contact allergens. The inhalation of pollen, molds, dust, or fungi can provoke an allergic reaction in a dog. Other environmental causes may be parasitic in nature with ticks, mosquitoes, and fleas as the culprits causing the allergies.
+                Labs with skin allergies typically suffer from skin ailments in various areas of the body, including the face, muzzle, ears, stomach, sides, and nose. Frequent itching, face rubbing, foot licking, or chewing on affected parts of the skin can lead to further skin trauma and damage. Without medical care, these spots can become sites for secondary infections, both bacterial and yeast.You can give your Labrador Retriever some temporary relief from itchy patches of skin and hot spots by using some over-the-counter products. Sulfate-free shampoos that are organic and hypoallergenic can calm and soothe inflamed and itchy skin. Added natural anti-inflammatories such as aloe vera, tea tree oil, and thyme can assist in stopping the itch and protecting the skin.
+                If you want to manage your Lab’s allergies, feed him a fresh food diet that will give him the nutritional power he needs to fight allergic reactions. Although commercial dry kibble is a standard dog food option, this diet fails to provide dogs with the nutrients they need to be strong, healthy, and free from allergies. Commercial dog foods are often lacking in healthy fats that work to calm and control skin inflammation; these foods typically do not have fish oil or sunflower oil or essential fatty acids such as Omega-3 and Omega-6. 
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+               <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding:0px 10px;">
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">FEEDING CAUTIONS</h1>
+               <img src="https://thumbs.dreamstime.com/b/labrador-dog-vector-eps-hand-drawn-vector-eps-logo-icon-crafteroks-silhouette-illustration-different-uses-labrador-dog-vector-146466988.jpg" width="88" height="86">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:16px;">
+                Meats should be lean with all the fat removed. Avoid processed meats such as bacon and sausage as they contain a lot of salt and seasoning.
+                Most vegetables should be cooked first to help with digestion however raw carrots and green beans are fine. Remove all pits and seeds from fruits as they are a choking hazard. They also contain cyanide which is toxic to dogs when consumed in large quantities. Nuts are not recommended due to their high-fat content which can cause vomiting and diarrhea. They are also a choking hazard.
+                Don’t feed raw eggs or raw fish due to the risk of salmonella or listeria. Labradors can not eat a range of foods including chocolate, macadamia nuts, onions, garlic, grapes, raisins, alcoholic drinks, unbaked bread dough, and goods sweetened with xylitol. These are the most common foods whereby dogs suffered poisonings in the last few years.
+
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+              <img class="img-fluid dogimg" src="https://www.ukpets.com/blog/wp-content/uploads/2020/05/labrador-puppies.jpg">
+          </div>
+        </div>
+       </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

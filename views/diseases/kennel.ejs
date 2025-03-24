@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennel cough</title>
+   <style>
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+        nav{
+             padding-left:3px ;
+                }
+         .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        .dark{
+            font-size : 20px;
+            font-weight: 500;
+            color:red;
+        }
+        .light{
+            color:rgb(0, 81, 255);
+            font-size:17px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+   </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/nutrients">NUTRIENTS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding-left:8px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">KENNEL COUGH</h1>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( About the disease )</h1>
+
+               <p style="color:rgb(253, 55, 154);font-size:17px;">
+                Kennel cough is the common name given to infectious bronchitis in dogs. Just as in chest infections in humans, a number of different bacteria and viruses can cause the illness – normally a combination of both. It affects their respiratory system, causing them to cough.
+                While a nuisance, kennel cough is not normally dangerous and is likely to need no treatment at all. But in puppies, elderly dogs or those with existing illnesses, the condition can be more serious and can develop into pneumonia. Depending on the germs which have caused the virus, some strains of the infection can also be more severe than others.
+                Kennel cough is airborne and highly contagious, which is why it can spread through kennels quickly. It is also transmitted with bacteria on toys, food bowls or other shared objects.
+                A dog’s respiratory system is designed to protect against the invasion of infection, but certain situations and environments leave them more vulnerable to illness. These include stress caused by crowded environments, exposure to heavy dust or cigarette smoke, cold temperatures and poor ventilation. Kennel cough has an incubation period of two to 14 days, and some dogs can be carriers of the infection for months without developing symptoms.
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://www.ovrs.com/blog/wp-content/uploads/2018/04/OVRS-Apr-Wk2-shutterstock_711099700-2000x1333.jpg">
+          </div>
+        </div>
+       </section>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://veterinarianwestminsterco.com/images/imgHome2.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center">
+               <br>
+               <br>
+               
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( Symptoms )</h1>
+               <p style="font-size:18px;color:rgb(253, 55, 154)">
+                The most obvious symptom of kennel cough is a forceful, hacking cough, which will often sound like your dog has something stuck in their throat. The cough can be dry and hoarse or productive, in which case it can be followed by a gag, swallowing motion or the production of mucus. It is distinct from a cough-like sound known as reverse sneezing, which is common in certain breeds and is triggered by irritation in the throat. This sound can often be mistaken for a cough, choking fit, sneezing, retching or gasping for breath.
+                In most cases, dogs with kennel cough will appear healthy apart from coughing. But some dogs will have a runny nose, sneezing or eye discharge. They should retain their appetite. Apart from your dog coughing, the infection is unlikely to make them feel ill. Your dog can get kennel cough more than once. 
+                There are many different strains of kennel cough – as there are among common colds in humans – so your dog can catch the infection multiple times. But if your dog has contracted the Bordetella bronchiseptica strain, he or she will typically be immune to reinfection for six to 12 months.
+            </p></div>
+               
+          </div>
+        </div>
+       </section>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding-left:8px;">
+               <br>
+               <br>
+               <br>
+               
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( Treatment )</h1>
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                In most cases, dogs will recover from kennel cough without treatment within three weeks, but it can sometimes linger for anything up to six weeks. To aid recovery, make sure your home is well ventilated and avoid using a collar and lead, as any pulling might aggravate the wind pipe further – a harness is a better option on walks. Should treatment be given, antibiotics can kill the Bordetella bacteria – the most common present in kennel cough cases. Cough suppressants and anti-inflammatories can also be given to make your pet a bit more comfortable as they make a natural recovery.
+                Some of the infections that can cause kennel cough are included in the basic vaccinations dogs need to have as a puppy, and subsequent boosters. These are canine adenovirus type two, canine parainfluenza virus, canine distemper, and canine influenza.
+
+But the most common bacteria present in kennel cough is Bordetella bronchiseptica, which can be given as a separate vaccine – through nasal drops or infection. However, as there are many strains of the infection, it cannot guarantee protection – but at the very least should lessen symptoms. Vaccination is not useful in dogs already incubating kennel cough.
+
+The nasal vaccine for Bordetella bronchiseptica can be given when your dog is as young as three weeks, with it providing protection for about 12 months. It takes four days for it to become effective, and is considered the fastest method of providing immunity.
+               </p>
+               </div>
+     
+          </div>
+          
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://media1.popsugar-assets.com/files/thumbor/ASKysbRqgNIh4eBjIzLjuSzHZsA/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/08/05/066/n/44701584/876ad6e21ed7cd1c_marcus-wallis-4zfacTKyZ7w-unsplash/i/Cutest-Pictures-Beagles.jpg">
+          </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

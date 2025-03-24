@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+        text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+       }
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+            .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>german shephard nutritional guide</title>
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding:0px 7px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DIET GUIDANCE</h1>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNz0YogmC0gKht-VtxU_T_S3ZszQvMH4Kj9-8OXnW7I4p-EWRL0A5c5-I41-W9cwWBpK8&usqp=CAU" width="84" height="85">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:16px;">
+                The nutritional requirements of German Shepherds are a minimum of 22% protein during growth stages and 18% protein for adult dogs. Puppies need 8% fat, and adults require 5% fat to meet their energy needs. Carbohydrates, vitamins, minerals, and water are also needed for survival.
+                The German shepherd dog is a muscular working dog with a high energy level and a hearty appetite. To prevent obesity and to help avoid some hereditary health problems that occur in the breed, provide your dog plenty of exercise and feed them a high-quality diet. Look for ingredients that help to maintain a healthy coat and that are easy to digest. This will help to prevent gastrointestinal upset and ensure that your German shepherd dog properly metabolizes the vitamins and minerals in the food.
+                Feed your high-energy German shepherd dog according to the caloric requirements for an active dog. German shepherd dogs rendered less active by arthritis or hereditary conditions such as hip dysplasia will benefit from a reduced-calorie diet that holds the dog's weight down to avoid putting pressure on painful joints.
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F15%2Fstanding-german-shepherd-151533956-2000.jpg">
+          </div>
+        </div>
+       </section>
+       <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://thewallpaper.co/wp-content/uploads/2020/08/german-shepherd-new-images-desktop-wallpapers-free-cute-lovely-animals-download-1600x1200-1.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center" style="padding:0px 10px;">
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ALLERGIES</h1>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNz0YogmC0gKht-VtxU_T_S3ZszQvMH4Kj9-8OXnW7I4p-EWRL0A5c5-I41-W9cwWBpK8&usqp=CAU" width="75" height="80">
+               <p style="color:rgb(253, 55, 154);font-size:16px;">
+                Unfortunately, the German Shepherd is a high-risk breed for skin allergies like canine atopic dermatitis (CAD). Environmental causes, mainly parasitic, and food hypersensitivity are predispositions that any German Shepherd pet parent should expect to encounter. German Shepherds are susceptible to immunological disorders, and often, this breed of dog will suffer from dry, flaky skin, sores from flea allergy dermatitis, secondary bacterial skin infections, scabies, and other forms of contact dermatitis. 
+                Due to the high likelihood of your German Shepherd developing allergies, if you see him excessively or frequently shaking his head, or scratching, chewing, or biting on parts of his body, he probably has an allergy. 
+                Allergies that manifest externally can occur anywhere on a German Shepherd’s body. Frequent locations for allergic inflammations in this breed are the face, ears, paws, sides, hind end, legs, and stomach. Dandruff, flaky skin, dry skin, hot spots, hair loss in patches, and sores are symptoms of skin allergies that can be found in any of the previously mentioned areas of the dog’s body. 
+                A variety of over-the-counter treatments are available to provide some temporary relief if your itchy German Shepherd suffers from environmental allergies. Hypoallergenic, sulfate-free, organic shampoos can go a long way toward making your dog feel better. Shampoos that include additional anti-inflammatory products like tree tea oil or aloe vera will add to the soothing, calming effect on your German Shepherd’s skin.
+                Skin allergies that are caused by a food allergy can be complicated in terms of diagnosis and treatment. First, consult with your veterinarian and perhaps an allergist or board-certified veterinary nutritionist for assistance in identifying whether a particular food is causing your dog to react this way. 
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+               <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding:0px 20px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">FEEDING CAUTIONS</h1>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNz0YogmC0gKht-VtxU_T_S3ZszQvMH4Kj9-8OXnW7I4p-EWRL0A5c5-I41-W9cwWBpK8&usqp=CAU" width="84" height="85">
+               <br>
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:18px; line-height:30px;">
+
+Foods poisonous to German Shepherds include chocolate, grapes, avocados, garlic, onions, leeks, wild mushrooms, macadamia nuts, walnuts, alcohol, and salt. Some more obscure foods are also toxic to dogs, such as xylitol (sweetener), yeast dough, raw potatoes, hops, green tomatoes, and moldy food.
+   German Shephards are very lactose intolerant so they must be kept away from dairy products. Remember to give your german shephard a proper 2 or 3 km of walk after every meal as their digestive systems takes a little time to start digesting food . 
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://canna-pet.com/wp-content/uploads/2017/10/german-shepherd-dog-1071592_1920-e1507312802867.jpg">
+          </div>
+        </div>
+       </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

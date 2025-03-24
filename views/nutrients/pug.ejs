@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+        text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+       }
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+            .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>pug nutritional guide</title>
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding:0px 10px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DIET GUIDANCE</h1>
+               <img src="https://previews.123rf.com/images/treemouse/treemouse1810/treemouse181000016/110553055-pug-dog-black-and-white-hand-drawn-cartoon-portrait-funny-happy-smiling-pug-sitting-and-looking-forw.jpg" width="84" height="82">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:16px;">
+                Pug puppy (0-3 months): If you have got an adopted one whose age is below 45 days and has no living mother, you can feed the puppy milk replacers like Beaphar lactol, choostix petasure or royal canin babydog milk. Cow milk cerelac is not recommended. Not only human cerelac causes loose motion, it may result in stunted growth as well. Mother’s milk, if available is still the best option at this age.
+
+After 45 days age, you can go for starter dry food of any brand like drools starter, royal canin mini starter, farmina puppy starter or a brand you like. Starter dry food can be fed to both mother and puppy till 3 months age. If starter kibble is too hard for your puppy to chew, you can add water in it, blend in a grinder and make a mixture that can be fed by feeding bottle.
+Pug puppy (3-12 months):This is the ideal growing stage of the puppy. Your puppy will gain the maximum in mass, length and height at this age span. You can feed junior dry food at this age of your choice brand or home-made food like chicken rice or curd rice.
+Feed the puppy not more than 3 times a day even if puppy acts like he.he is hungry, You can give up to 175g a day divided into separate meals. Make sure food is rich in protein quantity.
+Pug adult (12 months+): Your pup has become an adult now. Some good choices are royal canin pug adult, farmina chicken pomegranate mini adult, orijen original, acana small breed adult etc.
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://th.bing.com/th/id/Rbf857fc27087ce48edefe93feb2a9765?rik=VlKwJnSO3M2amg&riu=http%3a%2f%2fcdn0.vox-cdn.com%2fimported_assets%2f2129213%2fDSC00645_JPG.jpg&ehk=R79tL5K9NdCOyDTrrVIx9cZ%2fSlKnyn%2bk5J%2f1Fl4cd6s%3d&risl=&pid=ImgRaw">
+          </div>
+        </div>
+       </section>
+       <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F12%2F14%2FPug-dog-care.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2"> 
+            <div class="text-center" style="padding:0px 10px;">
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ALLERGIES</h1>
+               <img src="https://previews.123rf.com/images/treemouse/treemouse1810/treemouse181000016/110553055-pug-dog-black-and-white-hand-drawn-cartoon-portrait-funny-happy-smiling-pug-sitting-and-looking-forw.jpg" width="84" height="82">
+               <p style="color:rgb(253, 55, 154);font-size:16px;">
+                Food is the most common cause of allergies in Pugs. Your dog can be affected by certain elements in its diet. Most often dog food additives are the culprit. These could include artificial flavoring, food coloring dyes and synthetic preservatives found in most store-bought dog meals. Your Pug may also be affected by fillers such as wheat, soy, corn, and even grains.
+
+                Milk, eggs and certain proteins can also affect Pugs. Dogs generally have a high dairy intolerance. 
+                These are allergens that can be inhaled. The most common airborne allergens are dust mites and their droppings. There are however other airborne allergens such pollen, weeds and even certain types of grass. Fine particles from pesticides, perfumes and air fresheners are also a likely cause of allergies for your Pug.
+                If your pug is constantly scratching its ears, it may have an ear infection caused by an allergy. Ear scratching may seem like a normal canine habit, but there is always an underlying reason if it persists.
+                There are certain was to treat pug allergies like Wipe off your dog with a wet towel every time they come into the house. It is easy for them to pick up allergens when playing outdoors. Accumulation of some allergens on their skin can trigger an allergic reaction.
+                Vacuum the house on a regular basis. These can eliminate allergens such as mites.
+                Apply quality paw wax on a weekly basis.
+
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+               <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding:0px 15px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">FEEDING CAUTIONS</h1>
+               <img src="https://previews.123rf.com/images/treemouse/treemouse1810/treemouse181000016/110553055-pug-dog-black-and-white-hand-drawn-cartoon-portrait-funny-happy-smiling-pug-sitting-and-looking-forw.jpg" width="84" height="82">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                The Pug is a small dog breed and reaches a height of around 26 to 34cm and an ideal weight of approx. 6.3 to 8.1 kg. Since the Pug is a so-called “brachycephalic” breed and struggles with respiratory problems due to its round-shaped head and short nose, excess weight should be avoided.
+                You should make sure its food has an adapted amount of calories, since if not, the Pug can reach a higher weight than foreseen and develop an unstable bone structure.
+
+                By nature, the Pug has a compact physique with good, strong muscles. Hence, it needs sufficient exercise and a balanced needs-based diet.
+                In addition, you should keep an eye on the quantity of food, since a Pug won't stop eating of its own accord if there is still food in its bowl.
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://marshallspetzone.com/blog/wp-content/uploads/2016/12/5.jpg">
+          </div>
+        </div>
+       </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

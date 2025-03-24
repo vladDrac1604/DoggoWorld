@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+      #outer::after{
+    content:"";
+    background: url(https://coolwallpapers.me/picsup/5269631-dog-grass-tree-walk-canine-pet-animal-standing-hunting-field-outdoors-nature-bulgaria-weim-hanna-forest-weimaraner-gun-dog-deerhound-ranger-free-images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:blur(2px);
+    -webkit-filter: blur(2px);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    z-index: -1;
+     }
+     #outer{
+       display:flex;
+       justify-content: center;
+       margin-top: 130px;
+     }
+     label{
+         color:aqua;
+         font-size: 18px;
+         font-family: 'Times New Roman', Times, serif;
+     }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+      <div id="outer">
+     <section style="width:386px;height:483px;border:2px solid yellow;border-radius: 4%;">
+        <div class="text-center">
+            <h1 style="color:yellow;font-size:33px;font-family: 'Times New Roman', Times, serif;letter-spacing: 2px;">USER LOG IN PAGE</h1>
+        </div>
+        <br>
+        <form action="/register">
+            <div class="text-center"><button class="btn btn-danger">MAKE A NEW ACCOUNT</button></div>
+        </form>
+        <br>
+        <div style="padding: 0px 8px;">
+          <% if(purpose != "reviews") { %> 
+            <p style="color:yellow;font-size:19px;text-align:center;font-family:'Times New Roman', Times, serif;">( You must have an account in order to adopt )</p>
+            <br>
+            <form action="/LogIn" method="POST">
+              <label class="form-label" for="name">USERNAME</label>
+              <input class="form-control" type="text" id="name" name="username" placeholder="Enter username" required>
+              <label class="form-label" for="number">PASSWORD</label>
+              <input class="form-control" type="password" id="number" name="password" placeholder="Enter password" required>
+                <br>
+                <div class="text-center"><button class="btn btn-primary">LOG IN</button></div>
+            </form>
+            <br>
+            <form action="/home">
+                <div class="text-center"><button class="btn btn-success">BACK TO HOME</button></div>
+            </form>
+           
+          <% } else { %> 
+            <p style="color:yellow;font-size:19px;text-align:center;font-family:'Times New Roman', Times, serif;">( You have to be logged-in to make a review )</p>
+            <br>
+            <form action="/add/reviews/<%= Breed %>" method="POST">
+              <label class="form-label" for="name">USERNAME</label>
+              <input class="form-control" type="text" id="name" name="username" placeholder="Enter username" required>
+              <label class="form-label" for="number">PASSWORD</label>
+              <input class="form-control" type="password" id="number" name="password" placeholder="Enter password" required>
+                <br>
+                <div class="text-center"><button class="btn btn-primary">LOG IN</button></div>
+            </form>
+            <br>
+            <form action="/breeds">
+                <div class="text-center"><button class="btn btn-success">BACK TO BREEDS</button></div>
+            </form>
+            <% } %> 
+            </div>
+
+     </section>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+   <style>
+       #mainnav .nav-link{
+           font-size:21px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+        nav{
+             padding-left:3px ;
+                }
+        #heading{
+          color:yellow;font-family: 'Times New Roman', Times, serif;font-size: 52px;
+        }   
+        #subheading{
+          color:yellow;font-family:'Times New Roman', Times, serif;font-size: 19px;
+          font-family: cursive;
+        }     
+        #subheadiv{
+          padding:0px 330px;
+        }
+        #cardiv{
+          padding:0px 310px;
+        }
+       @media(max-width:1200px)
+       {
+         #heading{
+           font-size: 38px;
+         }
+         #subheading{
+           font-size: 18px;
+         }
+         #subheadiv{
+           padding: 0px 75px;
+         }
+         #cardiv{
+           padding: 0px 100px;
+         }
+       }
+      
+
+   </style>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+<body style="background-color: rgb(58, 90, 90);">
+    
+      <nav id="mainnav" class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-size: 30px;">
+            &#128062;
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/home">HOME</a>
+              <a class="nav-link" href="/breeds">BREEDS</a>
+              <a class="nav-link" href="/nutrients">NUTRIENTS</a>
+              <a class="nav-link" href="/LogIn">ADOPTION</a>
+              <% if(m==0) { %> 
+              <a class="nav-link" href="/update">UPDATE</a>
+              <% } %> 
+            </div>
+            <% if(m==0) {%>
+              <div class="navbar-nav" style="margin-left: auto;">
+                <a class="nav-link" href="/LogOut">Log Out</a>
+              </div>
+              <% } %> 
+              <% if(m==1){ %>
+                <div class="navbar-nav">
+                  <a class="nav-link"  href="/register">REGISTER</a>
+                </div>
+                <% } %> 
+          </div>
+        </div>
+      </nav>
+
+
+   
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="text-center"><h1  id="heading" >&#128054 REVIEWS ON <span style="color: aqua;"><%= CapBreed %></span> BREED &#128054</h1></div>
+       <br>
+       <div class="text-center" id="subheaddiv">
+           <h2 id="subheading" > Here are some reviews on <span style="color: aqua;"><%= CapBreed %></span> breed given by some of our users which may prove useful for new users who are thinking
+             about adoption &#128516
+        </h2>
+       </div>
+       <br>
+       <br>
+       <br>
+       <% for(let i=0;i<reviews.length;i++) { %> 
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-8 offset-2">
+            <div class="card text-dark bg-warning mb-3">
+              <div class="card-header" style="font-family: cursive;">Review By <%= users[i] %> </div>
+              <div class="card-body">
+                <p class="card-text text-center" style="font-family: cursive;font-size: 18px;"><%= reviews[i]  %> </p>
+                <% if(m==0 && LoggedIn==users[i]) { %>
+                
+                <form action="/review/deleted/<%= serial[i] %>" method="POST">
+                  <div class="text-center">
+                    <button class="btn btn-sm btn-danger">Delete Review</button>
+                  </div>
+                </form>
+                <% } %>  
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+       <% } %> 
+      
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

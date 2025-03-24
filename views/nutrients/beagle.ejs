@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       h1{
+        text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+       }
+       body{
+            overflow-x: hidden;
+        }
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+            .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>beagle nutritional guide</title>
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DIET GUIDANCE</h1>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQ6vOQPfY1RDktJmdlYSURe0aE_qtn-1OG2NWapJGmw0ceHoU8aRWDOzyxg46I_PNVKM&usqp=CAU" width="84" height="82">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:17px; padding:0px 9px;">
+               
+          With Beagle puppies, during the first 3 to 4 weeks, their main diet will be the dam's milk. By week 4 they are being slowly weaned with an incremental introduction to solid foods. This is done by mixing canine milk replacer with the food that the dam has been eating. Every few days, the ratio of liquid to solid will be less. By week 6, most Beagle puppies are eating a purely solid diet.
+          When first obtaining an 8 week old Beagle puppy, it is best that he is fed the same brand that he is used to receiving. A changeover to your preferred brand should be done in steps to avoid stomach upset. 
+          Starting at about the 6-month mark, work your way down to 2 meals a day; 1 in the morning and 1 in the early evening.  
+          If your Beagle is home alone, offer a light breakfast, and then leave a good portion of food in a treat release Kong. 
+         For a year old or  older beagle weight gain is slowing quite a bit. Stay aware of how many snacks you feed your Beagle since these calories can add up. 
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://cdn.buttercms.com/k7nqBBKkSDa9cfumT4mg">
+          </div>
+        </div>
+       </section>
+       <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://www.petterrain.com/wp-content/uploads/2015/03/Beagle-and-Puppies-Copy.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center">
+               <br>
+               <br>
+               
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ALLERGIES</h1>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQ6vOQPfY1RDktJmdlYSURe0aE_qtn-1OG2NWapJGmw0ceHoU8aRWDOzyxg46I_PNVKM&usqp=CAU" width="84" height="82">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:16px;padding:0px 8px;">
+                Beagles may have winning temperaments and engaging personalities, but they are also prone to a myriad of skin allergies. Genetically, Beagles are predisposed to both seasonal and food-related allergies that often manifest themselves in rashes, dandruff and flakiness, hot spots, and other skin irritations. 
+                The coat itself is a double coat that is dense, smooth, and waterproof. The Beagle’s shorter hairs mean it does not shed as voluminously as other breeds and mostly during the spring when the thicker winter coat is shedding. That said, the Beagle should still be brushed weekly to encourage new hair growth and to remove dead fur. Regular grooming also allows you to check your Beagle’s skin for symptoms of allergic reactions.
+                You can provide some interim relief for your beagle’s skin and coat issues by bathing him with a quality, organic, hypoallergenic shampoo that is free of sulfates and chemicals. Shampoos that include ingredients such as hydrocortisone, bentonite clay, and tree tea oil are useful for soothing and calming inflamed skin. Organic hot spot sprays can alleviate itchiness in stubborn outbreaks as well. Medical options include immunotherapy and symptomatic therapy as well as the application of corticosteroids and antihistamines.
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+               <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center">
+               <br>
+               <br>
+               
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">FEEDING CAUTIONS</h1>
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQ6vOQPfY1RDktJmdlYSURe0aE_qtn-1OG2NWapJGmw0ceHoU8aRWDOzyxg46I_PNVKM&usqp=CAU" width="84" height="82">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:16px;padding:0px 9px;">
+                The beagle typically reaches an adult size between 20 and 35 pounds which puts him at the upper limit for small breeds but under the minimum for large breeds. As a medium-sized dog, choosing the right diet for a beagle can be tricky. Small-breed recipes may be too high in calories because the beagle is highly prone to obesity but large-breed formulas may not be enough for an active beagle.
+                It’s difficult to say whether the beagle has unique nutritional needs based on the breed size because there is some variation. If your beagle is right around the 20-pound mark and is highly active, a small-breed formula could be appropriate. For larger and less active beagles, the best place to start is with a high-quality adult dog food made with plenty of animal protein.
+                Beagles do great on a wide variety of meats, from lamb to pork, chicken to turkey, fish and even bison. The key is that the meat needs to be real and wholesome. Chicken meal, beef meal, etc. means that the meat has been condensed (water and moisture removed), which offers more protein gram for gram.
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://www.k9rl.com/wp-content/uploads/2020/05/Beagle-Dog-Breed-Image-825x510.jpg">
+          </div>
+        </div>
+       </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

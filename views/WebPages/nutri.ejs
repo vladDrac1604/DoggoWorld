@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrients</title>
+    <style>
+     #outer::after{
+    content:"";
+    background: url(https://coolwallpapers.me/picsup/5269631-dog-grass-tree-walk-canine-pet-animal-standing-hunting-field-outdoors-nature-bulgaria-weim-hanna-forest-weimaraner-gun-dog-deerhound-ranger-free-images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter:blur(2px);
+    -webkit-filter: blur(2px);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    z-index: -1;
+     }
+     #outer{
+         display:flex;
+         justify-content:center;
+         margin-top:130px;
+     }
+     label{
+     color:aqua;
+     font-size:18px;
+     }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+      <div id="outer">
+        <section style="width:550px;height:472px;border:2px solid yellow;border-radius: 4%;">
+            <div class="text-center">
+                <h1 style="color:yellow;font-size:41px;font-family: 'Times New Roman', Times, serif;letter-spacing: 2px;">NUTRITION GUIDANCE PAGE &#128054</h1>
+            </div>
+            <br>
+            <div class="text-center"><span style="color:yellow;font-size:20px;font-family: 'Times New Roman', Times, serif;padding:0px 8px;">
+                 To ensure that your four legged friend stays healthy we guide you about giving your dog the <span style="color:aqua;">proper diet</span> and make you aware of the <span style="color:aqua;">allergies</span> that it could get.
+            </span></div>
+            <br>
+            <br>
+            <div style="padding:0px 10px;">
+            <form action="/nutrients" method="POST"> 
+                <label class="form-label" for="breed">SELECT BREED</label>
+                <select id="breed" name="Breed" class="form-control" required>
+                    <option value="none" selected disabled hidden>Breed</option>
+                    <option value="labrador retriever">Labrador Retriever</option>
+                    <option value="german shephard">German Shephard</option>
+                    <option value="pug">Pug</option>
+                    <option value="mastiff">Mastiff</option>
+                    <option value="huskey">Huskey</option>
+                    <option value="rottweiler">Rottweiler</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="doberman pinscher">Doberman Pinscher</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="dalmation">Dalmation</option>
+                   </select>
+                   <br>
+                   <div class="text-center"><button class="btn btn-primary">START GUIDE</button></div>
+            </form></div>
+            <br>
+            <div class="text-center">
+              <form action="/home">
+            <button class="btn btn-danger">BACK TO HOME PAGE</button>
+            </form>
+            </div>
+            </section>
+       </div>   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+</body>
+</html>

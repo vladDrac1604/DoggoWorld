@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+        text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+       }
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+            .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>rottweiler nutritional guide</title>
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding: 0px 10px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DIET GUIDANCE</h1>
+               <img src="https://i.pinimg.com/474x/c3/1d/12/c31d1235889fa331e8d0a9efbc845441.jpg" width="84" height="82">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:17px;">
+                Adult Rottweilers need a diet containing between 22 and 26 percent protein from whole proteins such as chicken, turkey, lamb, or herring. Rottweiler puppies often do well if fed adult food to prevent the rapid growth that can cause joint problems in large breeds. Whether or not your dog has food allergies, avoid chemical preservatives including BHA, BHT, Ethoxyquin, and foods high in sodium.
+                Rottweilers generally weigh between 85 and 125 pounds, and an active Rottweiler requires at least 2,100 calories per day. Do not allow your Rottweiler to become obese. There should not be so much fat on your dog's ribs that you cannot easily feel them under the skin. Obesity can also lead to or worsen joint problems that are common in this breed, including hip or elbow dysplasia. When feeding your Rottweiler, watch for signs of upset stomach, vomiting, flatulence or skin problems that are symptoms of larger problems.  
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://www.bil-jac.com/media/nhyd0qet/rottweiler-868607572.jpg">
+          </div>
+        </div>
+       </section>
+       <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2021/03/09135854/Rottweiler-puppy-fetching-a-toy-in-the-grass.jpeg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center" style="padding: 0px 10px;">
+               <br>
+               
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ALLERGIES</h1>
+               <img src="https://i.pinimg.com/474x/c3/1d/12/c31d1235889fa331e8d0a9efbc845441.jpg" width="84" height="82">
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+               Rottweilers can suffer from food, skin or inhalant allergies. If you notice that your dog is experiencing sensitivity to certain foods, dietary changes may be recommended by your veterinarian to prevent these issues. Some ingredients tend to irritate food allergies more than others. These ingredients include protein sources that your dog has already been eating or those common in dog foods, such as beef, chicken, or turkey. Dairy products and high amounts of animal fats can also upset dogs with food allergies.
+               Rottweilers suffer from sensitive stomach issues resulting not only from food allergies, but also canine inflammatory bowel disease and colitis. Allergies and immune conditions are more frequent in the Rottweiler breed than other breeds. Because the symptoms of these autoimmune disorders are similar to food allergies, consult with your veterinarian for a proper diagnosis.  
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+               <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding: 0px 5px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">FEEDING CAUTIONS</h1>
+               <img src="https://i.pinimg.com/474x/c3/1d/12/c31d1235889fa331e8d0a9efbc845441.jpg" width="84" height="82">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:16px;">
+                Rottweilers share with other large, deep-chested breeds a heightened risk of gastric dilation and volvulus, commonly referred to as bloat. This is a true medical emergency caused when a dog's stomach fills with food and gas and then turns, blocking the release of the building gases. The dog will die without fast medical help. The risk that this condition will occur is worsened by rapid gulping of food and by consuming a single large meal per day. Divide your Rottweiler's ration into at least two meals per day; three is preferable. Don't feed your dog in elevated dishes, and avoid feeding less than an hour before or after strenuous exercise. Give your dog a constant supply of fresh, clean water so that the dog does not feel the need to drink large quantities of water at mealtime.  
+                Homemade dog food or raw diets may help alleviate allergy symptoms, but if you wish to try such a diet, it is important to consult your veterinarian to ensure your dog will receive a well-balanced diet that contains all of the vitamins and minerals a dog must have to thrive. When feeding raw meat, always thoroughly wash your hands, kitchen utensils and surfaces that come in contact with the meat to avoid bacterial contamination.   
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F11%2F10%2Frottweiler-sunning-in-grass-220034514-2000.jpg">
+          </div>
+        </div>
+       </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

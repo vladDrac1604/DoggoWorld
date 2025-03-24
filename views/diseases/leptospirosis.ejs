@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leptospirosis</title>
+   <style>
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+        nav{
+             padding-left:3px ;
+                }
+         .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        .dark{
+            font-size : 20px;
+            font-weight: 500;
+            color:red;
+        }
+        .light{
+            color:rgb(0, 81, 255);
+            font-size:16px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+   </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/nutrients">NUTRIENTS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding-left:8px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">LEPTOSPIROSIS</h1>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( About the disease )</h1>
+               <p style="color:rgb(253, 55, 154);font-size:17px;">
+                Leptospirosis is an infectious disease caused by a type of bacteria called Leptospira. The disease causes serious damage to the kidney and liver, and may be fatal in severe cases. Bacteria are passed in the urine of infected animals and can survive in the environment for long periods of time in warm, stagnant water or moist soil. Wild animals, including skunks, raccoons, opossums, rats, wolves, and deer, can spread infection to dogs.
+                Most dogs are infected by direct contact with urine from an infected animal. Others are infected by contact with water or soil contaminated with infected urine. Leptospira can penetrate the soft lining of the nose, mouth, and eyelid, and can enter the body through open sores and scratches in the skin.
+                After infection, bacteria multiply in the bloodstream and then move into the tissues. They concentrate in the liver and kidney, causing extensive damage to these organs.
+                About eight to ten days after infection, the dog's immune system produces an antibody response that quickly clears most of the Leptospira from the body. However, the damage caused by the bacteria often leads to liver failure or kidney failure, and sometimes both. In severe infections, the damage is irreversible and quickly becomes fatal.
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://www.ovrs.com/blog/wp-content/uploads/2018/04/OVRS-Apr-Wk2-shutterstock_711099700-2000x1333.jpg">
+          </div>
+        </div>
+       </section>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://i.pinimg.com/originals/65/b0/d9/65b0d97c6dbbf6133e1a84fafc9a1229.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center">
+               <br>
+               <br>
+               
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( Symptoms )</h1>
+               <p style="font-size:17px;color:rgb(253, 55, 154)">
+                Acute kidney injury has been the most common presentation for canine leptospirosis in recent years. Dogs affected by leptospirosis may show these clinical signs:
+                </p></div>
+                <ul>
+                    <li><span class="dark">Lethargy</span>
+                        </li>
+                    <li><span class="dark">Anorexia</span>
+                        </li>
+                    <li><span class="dark">Vomiting</span>
+                        </li>
+                    <li><span class="dark">Abdominal pain</span>
+                        </li>
+                   <li><span class="dark">Polyuria</span>
+                        </li>
+                </ul>
+                <div style="padding-left:6px;" class="text-center"><p style="color:rgb(253, 55, 154);font-size:16px;">
+                Leptospirosis should also be considered in any dog with previously diagnosed chronic kidney disease that develops “acute-on-chronic” kidney injury. Renal tubular damage in leptospirosis may manifest as cylindruria, proteinuria, or glycosuria.
+Acute liver disease may accompany acute renal failure in dogs with leptospirosis, or it may occur alone. Affected dogs may be icteric, and serum biochemistry analysis reveals increased bilirubin and alkaline phosphatase. ALT is typically less markedly increased than alkaline phosphatase. In people and dogs, the jaundice of acute leptospirosis appears to be associated with minimal histopathologic changes in the liver, suggesting that it is due to the “cholestasis of sepsis” rather than to hepatocellular damage.
+Muscle pain, stiffness, weakness, trembling, or reluctance to move can be seen in dogs with leptospirosis. These may be the result of vasculitis, myositis, or nephritis. Myalgia is commonly reported in human leptospirosis and is associated with the septicemic phase of the disease.
+Less common manifestations of canine leptospirosis include bleeding disorders characterized by petechial hemorrhages, epistaxis, melena, and hematemesis. These findings are most likely due to vasculitis. Affected dogs may also be thrombocytopenic; however, platelet counts are rarely low enough to be responsible for spontaneous bleeding. The causes and mechanisms of bleeding disorders in leptospirosis are poorly understood, but they have been suggested to be associated with endothelial cell damage. Pulmonary hemorrhage is now one of the most common clinical signs in outbreaks of human leptospirosis. This is a less common finding in canine leptospirosis; however, cough or dyspnea, or radiographic abnormalities have been noted in a number of affected dogs. Uveitis is an uncommon manifestation of leptospirosis in dogs. It appears to be infrequently associated with experimental canine leptospirosis, but rare case reports exist.
+              </p></div>
+
+          </div>
+        </div>
+       </section>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 233, 110);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding-left:8px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:36px;">( Treatment )</h1>
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                Renal failure and liver disease are treated with fluid therapy and other supportive measures to maintain normal fluid, electrolyte, and acid-base balance.
+Supportive measures may include:
+               </p>
+               </div>
+               <br>
+                <ul>
+                   <li><span class="light">Antiemetics</span></li>
+                   <li><span class="light">GI protectants</span></li>
+                   <li><span class="light">Phosphate binders</span></li>
+                   <li><span class="light">Hepatic support medications</span></li>
+               </ul>
+               <div style="padding-left:6px;" class="text-center"><p style="color:rgb(253, 55, 154);font-size:17px;">Renal replacement therapy with intermittent hemodialysis or continuous renal replacement therapy should be considered for dogs that are anuric or oliguric despite appropriate supportive therapy. Antibiotic therapy is indicated whenever leptospirosis is suspected and should be instituted before confirmatory test results are available. There are no experimental studies in dogs to guide selection of antibiotic protocols for this species.
+
+               Current recommendations are to treat with doxycycline (5 mg/kg/day, IV or PO) for 2 wk. For dogs that cannot tolerate doxycycline, initial therapy with a penicillin is appropriate, but this should be followed by a 2-wk course of doxycycline to eliminate the renal carrier phase of infection. Dogs recently exposed to leptospirosis may be treated prophylactically with oral doxycycline for 14 days.
+          </p></div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://journal.lyka.com.au/wp-content/uploads/2018/02/Holistic-Vet.png">
+          </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

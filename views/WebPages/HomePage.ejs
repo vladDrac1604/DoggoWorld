@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+     
+
+    
+    </style>
+    <link rel="stylesheet" href="/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-xl navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/nutrients">NUTRIENTS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+  
+ 
+  
+     <section id="firstcontainer" class="container-fluid px-0 py-5" style="max-width: 100%;">
+      <div class="row mt-3">
+       <div class="col-lg-6 align-self-center">
+           <div class="text-center">
+        <h1 id="heading" style="text-shadow: 2px 2px 6px rgb(179, 19, 19);" class="mb-0">DOGGO WORLD</h1>
+        <span style="font-size: 60px;">&#128062;</span>
+        <blockquote class="blockquote" style="padding-left:8px;">
+          <p  id="bruce" style="font-family: cursive;">My main characters are the most sunny, happy, optimistic, loving creatures on the face of the Earth. I couldn’t be happier that’s where I start. I can put as many flawed people in the dog’s world as I like, but the dog doesn’t care. Dog doesn’t judge, dog doesn’t dislike. Dog loves. That’s not so bad.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer" style="color:blue;font-size: 13px;">
+          Written by <cite title="Source Title">W. Bruce Cameron</cite>
+        </figcaption>
+         
+           </div> 
+      </div>
+       <div class="col-lg-6">
+        <img src="https://www.petplace.com/article/dogs/pet-care/dog-care/puppy-care/media_16e89029edcc85076147cda767a7cd26d98767af3.png?width=750&format=png&optimize=medium" class="img-fluid dogimg">
+       </div>
+      </div>
+    </section>
+     <section id="secondcontainer" class="container-fluid px-0 ">
+          <div class="row">   
+          <div class="col-lg-2">
+              </div>
+              <div class="col-lg-8 align-self-center">
+                
+                  <span id="welcome" style="text-shadow: 2px 2px 6px rgb(179, 19, 19)">WELCOME TO DOGGO WORLD <span id="dogicon">&#128054</span></span>
+                     <p id="wel" style="font-family: cursive;">Your own personal guide on how to become a better owner to give your four legged <br> friend the best  care and love it can get.</p>
+              </div>
+              <div class="col-lg-2">
+              </div>
+          </div>
+        </section>
+     <section id="thirdcontainer" class="container-fluid px-0">
+      <div class="row">
+           <div class="col-lg-6">
+             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/funny-dog-captions-1563456605.jpg" class="img-fluid dogimg">
+           </div>
+           <div class="col-lg-6">
+             <div class="text-center">
+                 <h1 class="mb-0 mt-4" style="font-family:'Times New Roman', Times, serif; color:red;font-size:61px;padding-top:45px;letter-spacing:2px;text-shadow: 2px 2px 6px rgb(179, 19, 19);">DOG  ADOPTION</h1> 
+                 <span style="font-size: 60px;">&#128062;</span>
+                 
+                 <p class="mt-1" style="color:rgb(30, 109, 255);font-size:20px;line-height:35px;font-family: cursive;">At <span style="color:red;">DOGGO WORLD</span> we  have  various dog breeds ranging from a small 
+                  puppy to an adult dog among which you can find your new best friend. But choosing the breed could be a challenging task itself, don't worry
+                we are here to help you out in finding your new furry best friend.</p>
+                 <br>
+                 <form action="/AdoptionGuide" method="GET">
+                   <button  class="btn btn-primary" style="font-family: cursive;font-size: 17px;">Adoption Guide</button>
+                 </form>
+           </div>
+           </div>
+      </div>
+     </section>
+     <section id="fourthcontainer"  class="container-fluid px-0">
+      <div class="row">   
+        <div class="col-lg-3">
+            </div>
+            <div class="col-lg-6 align-self-center">
+                <span id="dogmatters" style="text-shadow: 1px 1px 6px rgb(179, 19, 19);">Because Every Dog Matters &#128054</span>
+            </div>
+            <div class="col-lg-3" >
+            </div>
+     </section>
+
+    <section id="fiftcontainer" style="background: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-yellow-cartoon-dog-print-pet-supplies-psd-layered-main-picture-image_165780.jpg);" class="container-fluid px-0">
+      <div class="row">
+        <div class="col-lg-1">
+          <div id="a"></div>
+        </div>
+          <div class="col-lg-4 ">
+            <div id="outer" style="background-image: url(https://www.fetchfind.com/blog/wp-content/uploads/2018/06/why-do-dogs-roll-in-grass.jpg);background-repeat: no-repeat;background-size: cover;
+            ;opacity: 0.9;" class="text-center ">
+          <span id="disspan" style="-webkit-text-stroke: 2px #E21F03;text-shadow: 1px 1px 6px rgb(179, 19, 19);">
+                LEARN ABOUT THE DISEASES FROM WHICH YOUR DOG MUST BE PROTECTED
+          </span>
+          <br>
+          <br>
+          
+          <form action="/heartworm" method="GET">
+            <button class="btn btn-warning" style="font-family: cursive;">Heartworm</button>
+          </form>
+          <br>
+          <form action="/lyme" method="GET">
+            <button class="btn btn-danger" style="font-family: cursive;">Lyme Disease</button>
+          </form>
+          <br>
+          <form action="/canine" method="GET">
+            <button class="btn btn-primary" style="font-family: cursive;">Canine Distemper</button>
+          </form>
+          <br>
+          <form action="/leptospirosis" method="GET">
+            <button class="btn btn-success" style="font-family: cursive;">Leptospirosis</button>
+          </form>
+          <br>
+          <form action="/kennel" method="GET ">
+            <button class="btn btn-secondary" style="font-family: cursive;">Kennel Cough</button>
+          </form>
+          <br>
+            </div>
+        </div>
+          <div class="col-lg-2"><div id="b"></div></div>
+          <div class="col-lg-4" style="background-image: url('https://images.unsplash.com/photo-1587283015243-5d127c71c72f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nJTIwaW4lMjBncmFzc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');background-repeat: no-repeat;background-size: cover;
+          ;opacity: 0.9;">
+            <div id="outer2" style="text-align:center;" >
+              <span id="namespan" style="-webkit-text-stroke: 2px #E21F03;text-shadow: 1px 1px 6px rgb(179, 19, 19);">
+                  START A SELF ASSESSMENT TO CHECK WEATHER YOUR DOG IS HEALTHY OR NOT
+              </span>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <form style="text-align: center;" action="/assessment" method="GET">
+                <button class="btn btn-primary" style="font-family: cursive;">Start Assessment</button>
+              </form>
+            </div>
+            
+          </div>
+          <div class="col-lg-1"><div id="c"></div></div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

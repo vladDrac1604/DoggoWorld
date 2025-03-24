@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+        text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+       }
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+            .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>doberman nutritional guide</title>
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+     <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding:0px 10px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DIET GUIDANCE</h1>
+               <img src="https://t4.ftcdn.net/jpg/03/61/47/47/360_F_361474774_NgNXoIh6tKl1ieaBXt0eIC9D3toHvLq9.jpg" width="90" height="84">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                Doberman Pinschers require high-quality foods that are easily digestible and palatable. The first ingredient listed should be a meat source such as chicken, beef, or lamb, followed by whole grains such as brown rice or sweet potatoes. Watch out for foods that have grain cereals like corn or wheat, fillers, and animal byproducts as top ingredients, as these are generally lower-quality ingredients. Look for a commercial diet approved by the Association of American Feed Control Officials, an organization that ensures the food is nutritionally balanced. Purchase high-quality foods from pet supply stores, and look for diets appropriate for your dog's age. To maintain your Doberman Pinscher's shiny coat, supplement the dog's diet with fatty acids such as flaxseed or safflower oils.
+
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://cdn.buttercms.com/87lngcODTai4r7693hlE">
+          </div>
+        </div>
+       </section>
+       <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://pbs.twimg.com/media/D7pF92DXkAAUac-.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center" style="padding: 0px 15px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ALLERGIES</h1>
+               <img src="https://t4.ftcdn.net/jpg/03/61/47/47/360_F_361474774_NgNXoIh6tKl1ieaBXt0eIC9D3toHvLq9.jpg" width="90" height="84">
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                Gastric dilation and volvulus, commonly called bloat, is a true digestive system emergency that occurs most frequently in deep-chested dog breeds such as the Doberman Pinscher. This frequently fatal condition occurs when food and gases in the stomach cause it to expand and rotate, blocking release of the gases and cutting off the stomach's blood supply. Without immediate medical intervention, the expanding stomach eventually can impede blood flow to the heart, causing a painful death. Veterinary research indicates you can reduce the risk of bloat in your dog by dividing the daily food ration into two or more daily feedings. Additionally, you can add a bit of wet food or table scraps to your dog's diet, to help reduce the chance of bloat. Avoid exercise an hour before or after a meal, provide your dog a constant supply of fresh water, make sure that your dog's bowl is low to the ground, and keep your Doberman Pinscher's stress level to a minimum.
+                Doberman Pinschers are also susceptible to canine juvenile renal disease, a hereditary disorder affecting the kidneys that usually causes early death. Symptoms usually appear before 2 years of age and include increased thirst, vomiting, weight loss and lethargy. A low-phosphorus and low-protein diet eases the burden placed on the kidneys to filter these substances, helping to slow the progress of kidney failure and to alleviate symptoms.
+                Doberman Pinschers are at risk for a spinal condition called wobblers syndrome. While symptoms often do not appear in Dobermans until later in life, veterinary resources including the Merck Veterinary Manual indicate taking nutritional steps to keep puppy weight down and prevent rapid growth can help reduce the risk that a susceptible dog will eventually develop this syndrome.
+                Nutritional steps to reduce the risk include not feeding puppy food beyond 6 months of age. The Vetinfo website recommends feeding the young dog a diet containing no more than 24 percent protein and avoiding supplemental vitamins and minerals, especially calcium and phosphorus.
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+               <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding: 0px 15px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">FEEDING CAUTIONS</h1>
+               <img src="https://t4.ftcdn.net/jpg/03/61/47/47/360_F_361474774_NgNXoIh6tKl1ieaBXt0eIC9D3toHvLq9.jpg" width="90" height="84">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                How much you feed your adult Doberman Pinscher depends primarily on the dog's activity level. If your dog regularly exercises, participates in agility training, or is a working dog, they will need more calories. For dogs that get an average amount of exercise, feed the Doberman Pinscher according to the dog food manufacturer's recommendations for a medium-sized dog. Make sure you divide the dog's daily ration into two to four meals per day. Look at your dog at mealtime. If your Doberman appears overweight and you can't feel the ribs, cut the ration. Your dog may require a diet food, or a food higher in fiber. Doberman Pinschers should be muscular and agile; if your dog seems either overweight or underweight, consult with your veterinarian to determine a correct feeding schedule and ration.
+
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://www.thesprucepets.com/thmb/bnVGuXN6iH0FWxnU424134Qq-lk=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/doberman-171840260-resized-56a26aa35f9b58b7d0c9ff92.jpg">
+          </div>
+        </div>
+       </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      h1{
+        text-shadow: 0.5px 1px 8px rgb(179, 34, 34);
+       }
+        #mainnav .nav-link{
+           font-size:20px;
+           color:rgb(230, 223, 223);
+          }
+       #mainnav .nav-link:hover{
+             color:cyan;
+            }
+            .dogimg{
+            transition: 0.5s ease-in-out;
+        }  
+        .dogimg:hover{
+            transform: translateY(-1.5px);
+            box-shadow: 2px 2px 6px 2px red;
+        }
+        body{
+            overflow-x: hidden;
+        }
+    </style>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>huskey nutritional guide</title>
+</head>
+<body>
+  <nav id="mainnav" class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="font-size: 30px;">
+        &#128062;
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/home">HOME</a>
+          <a class="nav-link" href="/breeds">BREEDS</a>
+          <a class="nav-link" href="/LogIn">ADOPTION</a>
+          <% if(m==0) { %> 
+          <a class="nav-link" href="/update">UPDATE</a>
+          <% } %> 
+        </div>
+        <% if(m==0) {%>
+          <div class="navbar-nav" style="margin-left: auto;">
+            <a class="nav-link" href="/LogOut">Log Out</a>
+          </div>
+          <% } %> 
+          <% if(m==1){ %>
+            <div class="navbar-nav">
+              <a class="nav-link"  href="/register">REGISTER</a>
+            </div>
+            <% } %> 
+      </div>
+    </div>
+  </nav>
+       <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding :0px 15px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">DIET GUIDANCE</h1>
+               <img src="https://media.istockphoto.com/vectors/siberian-husky-vector-id537925683?k=6&m=537925683&s=612x612&w=0&h=ODyHCTCgFxSRRCJFyexYFu1Fm2Z4Sn-bBsZOTlEbOIw=" width="84" height="92">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:17px;">
+                In general, it's best to feed your husky a mixture of commercial dog food and raw food. They need a diet high in protein, so feeding a well-balanced commercial food combined with raw red meat can fulfill their dietary needs.
+                Only feed after exercise. Feeding before exercise puts your husky at risk of gastric bloat and torsion.  This serious condition can kill a dog. A good rule to follow is to feed 30 minutes after exercise or four hours before exercise.
+                Until you know how your dog will react to a husky raw diet or whole food diet, supervision is necessary. Dogs that are gulpers of food will try to swallow large chunks of raw food and can choke. People assume that since wild canines eat a whole prey diet that their dogs will automatically be able to handle eating a raw diet safely. This is not always the case. If your dog is a food gulper, then a commercially ground raw food is a safer option for your dog. Also, dogs that have issues with poor tooth health should avoid the whole food diet. They can get the same nutrition from commercially ground raw food pucks.
+               </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>           
+           <img class="img-fluid dogimg" src="https://cdn.pixabay.com/photo/2017/08/05/14/51/dog-2584189_960_720.jpg">
+          </div>
+        </div>
+       </section>
+       <section id="ger" class="container-fluid px-0 " style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-md-1">
+                <br>
+                <br>
+                <br>
+             <img class="img-fluid dogimg" src="https://addpuppies.com/images/cute-little-husky-0258.jpg">
+            </div>
+          <div class="col-lg-6 order-1 order-md-2">
+           <div class="text-center" style="padding :0px 10px;">
+               <br>
+               <br>
+              
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">ALLERGIES</h1>
+               <img src="https://media.istockphoto.com/vectors/siberian-husky-vector-id537925683?k=6&m=537925683&s=612x612&w=0&h=ODyHCTCgFxSRRCJFyexYFu1Fm2Z4Sn-bBsZOTlEbOIw=" width="84" height="95">
+               <p style="color:rgb(253, 55, 154);font-size:17px;">
+                Huskies are prone to developing food allergies as well, and the reaction to those allergens often appears as skin allergies. Nearly all skin conditions involve itching and discomfort, so if your Husky is excessively rubbing, itching, or gnawing areas of his body, a food allergy may be the reason why.
+                Look for dog shampoos that are organic, hypoallergenic and sulfate-free. Shampoos with natural anti-inflammatories like thyme, aloe vera and quercetin can also provide extra assistance in fighting skin allergies. Your veterinarian can also prescribe corticosteroids or antihistamines if your Husky’s allergies are causing significant discomfort and distress.
+
+If your Husky is still suffering, you may want to consider the possibility of a food allergy. Start by consulting your veterinarian or a board-certified veterinary nutritionist who can help diagnose the allergy and see if food intolerance is its cause. The veterinarian or nutritionist may recommend an elimination diet.
+To treat your Husky’s food-based allergies, make sure his diet has the vitamins and minerals necessary to fight allergic reactions, including Zinc, which can be a common deficiency for Huskies. 
+            </p>
+          </div>
+          </div>
+        </div>
+        </section>
+               <section class="container-fluid px-0 py-10" style="background-color: rgb(247, 232, 100);">
+        <div class="row">
+          <div class="col-lg-6">
+           <div class="text-center" style="padding :0px 13px;">
+               <br>
+               <br>
+               <br>
+               <h1 style="color:red; padding:2px 0px;font-family:'Times New Roman', Times, serif;font-size:56px;">FEEDING CAUTIONS</h1>
+               <img src="https://media.istockphoto.com/vectors/siberian-husky-vector-id537925683?k=6&m=537925683&s=612x612&w=0&h=ODyHCTCgFxSRRCJFyexYFu1Fm2Z4Sn-bBsZOTlEbOIw=" width="84" height="95">
+               <br>
+               <p style="color:rgb(253, 55, 154);font-size:18px;">
+                Vegetables are good for your husky. They will add vitamins, minerals, and roughage (commonly called fiber) to your dog diet. Vegetables are low-calories. You can add vegetables to your dog’s food in modest quantities.  Major nutrients with low calories. 
+                Give vegetables as treats they are so low calorie. You can give them carrots or broccoli when you are training them or you feel the need to spoil your furry buddy.
+                Feeding fruits to your husky is safe and it has many beneficial effects. Fruits and vegetables are great to be used as doggy treats, as they are very tasty and low in calories while being rich in vitamins and antioxidants – that helps their immune system. Your Siberian husky will have fun while discovering different textures, smells, and tastes.
+                There are certain fruits and vegetables that are harmful for huskeys like Grapes, Plumps, Dried Fruit, Canned Fruit, Raisins,Onions, Chive, Hops, Jalapenos, Hot Peppers, Raw Potatoes, Green Tomatoes. 
+            </p>  
+          </div>
+          </div>
+          <div class="col-lg-6">
+              <br>
+              <br>
+           <img class="img-fluid dogimg" src="https://www.dancingwindssiberian.com/images/IMG_5949.jpg">
+          </div>
+        </div>
+       </section>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
